@@ -4,7 +4,6 @@ title = "Ana Schwendler"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
 googleAnalytics = "XXX"
-publishDir = "docs"
 
 [Params]
   homeTitle = "Ana Schwendler" # Set a different text for the header on the home page
