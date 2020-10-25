@@ -5,8 +5,6 @@ comments: false
 
 ## Education and Courses
 
-obs: tradução em curso..
-
 ### Bachelor in Computer Science
 
 #### Federal University of Rio Grande do Sul

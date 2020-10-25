@@ -3,6 +3,8 @@ title: Experiences
 comments: false
 ---
 
+obs: tradução em curso..
+
 ## Education and Courses
 
 ### Bachelor in Computer Science
@@ -15,7 +17,6 @@ Porto Alegre, Brazil
 
 Final thesis based on studies of NLP using a Data Science approach in text summarizing.  
 Scientific Initiation in developing a web based system using Google Maps API, studying about its.
-
 
 ## Experience
 
