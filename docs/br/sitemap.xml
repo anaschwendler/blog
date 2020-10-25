@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/posts/setting-up-tests-for-django-plugins/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/posts/setting-up-tests-for-django-plugins/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/posts/setting-up-tests-for-django-plugins/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/contribute/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/tags/contribute/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/tags/contribute/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/corona/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/tags/corona/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/tags/corona/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/development/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/tags/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/tags/development/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/django/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/tags/django/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/tags/django/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/open-source/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/tags/open-source/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/tags/open-source/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/posts/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/python/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/tags/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/tags/python/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/posts/open-source-quarantine/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/posts/open-source-quarantine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/posts/open-source-quarantine/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/software-development/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/tags/software-development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/tags/software-development/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/testing/</loc>
+    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/tags/testing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/tags/testing/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/posts/berlin-parte-1/</loc>
+    <lastmod>2019-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/berlin/</loc>
+    <lastmod>2019-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/mudanca/</loc>
+    <lastmod>2019-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/djangogirls/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/oficinas/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/posts/organizando-oficinas-tecnologia/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/railsgirls/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/tecnologia/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/tags/workshop/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/page/events/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/page/events/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/page/events/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/page/experiences/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/page/experiences/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/page/experiences/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.anaschwendler.com/br/page/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.anaschwendler.com/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="br"
+                href="https://www.anaschwendler.com/br/page/"
+                />
+  </url>
+  
+</urlset>
