@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>continuous integration on Ana Schwendler</title>
+    <link>https://www.anaschwendler.com/tags/continuous-integration/</link>
+    <description>Recent content in continuous integration on Ana Schwendler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>schwendler@gmail.com (Ana Schwendler)</managingEditor>
+    <webMaster>schwendler@gmail.com (Ana Schwendler)</webMaster>
+    <lastBuildDate>Mon, 16 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.anaschwendler.com/tags/continuous-integration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating our CI to Github Actions</title>
+      <link>https://www.anaschwendler.com/posts/migrating-github-actions/</link>
+      <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
+      <author>schwendler@gmail.com (Ana Schwendler)</author>
+      <guid>https://www.anaschwendler.com/posts/migrating-github-actions/</guid>
+      <description>And how we did that in Tourlane
+Now in Tourlane we are switching our deployment system to use GitHub Actions. So, in this post, we are sharing our experience with the tool so far, and how we are migrating our projects, little by little to the tool.
+What is CI/CD? Martin Fowler, one of the original authors of the Agile Manifesto, describes them like this in this book:
+ Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day.</description>
+    </item>
+    
+  </channel>
+</rss>

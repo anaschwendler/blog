@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>contribute on Ana Schwendler</title>
+    <link>https://www.anaschwendler.com/tags/contribute/</link>
+    <description>Recent content in contribute on Ana Schwendler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>schwendler@gmail.com (Ana Schwendler)</managingEditor>
+    <webMaster>schwendler@gmail.com (Ana Schwendler)</webMaster>
+    <lastBuildDate>Sat, 04 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.anaschwendler.com/tags/contribute/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open Source Quarantine</title>
+      <link>https://www.anaschwendler.com/posts/open-source-quarantine/</link>
+      <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
+      <author>schwendler@gmail.com (Ana Schwendler)</author>
+      <guid>https://www.anaschwendler.com/posts/open-source-quarantine/</guid>
+      <description>It’s quarantine time, and we might be tired of staying at home, not going out to live our lives. But we can turn it into something productive that might help other developers in the future. Since we have this free time, it would be awesome to give back (or just to start giving back) to tools that we appreciate and are free.
+There are a lot of blog posts that already cover on how to contribute to open source, so I’ll not rewrite what they say.</description>
+    </item>
+    
+  </channel>
+</rss>

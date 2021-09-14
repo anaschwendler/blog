@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>studying on Ana Schwendler</title>
+    <link>https://www.anaschwendler.com/tags/studying/</link>
+    <description>Recent content in studying on Ana Schwendler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>schwendler@gmail.com (Ana Schwendler)</managingEditor>
+    <webMaster>schwendler@gmail.com (Ana Schwendler)</webMaster>
+    <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.anaschwendler.com/tags/studying/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enhancing your skills with one code exercise a day</title>
+      <link>https://www.anaschwendler.com/posts/enhancing-your-coding-skills/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+      <author>schwendler@gmail.com (Ana Schwendler)</author>
+      <guid>https://www.anaschwendler.com/posts/enhancing-your-coding-skills/</guid>
+      <description>One of the characteristics I notice the most when talking about Software Development is the need of constantly being studying, learning and updating yourself. And as having this constant effort of gathering information, last year, I found myself a bit lost in the process. I was tired of reading and doing courses, and was struggling to find a sparkle to code every day again.
+Also, I found this pattern in most of my colleagues as we got tired of staying at home only (due to the pandemic).</description>
+    </item>
+    
+  </channel>
+</rss>

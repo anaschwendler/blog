@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Migrating our CI to Github Actions - Ana Schwendler</title>
+  <meta name="description" content="And how we did that in Tourlane
+Now in Tourlane we are switching our deployment system to use GitHub Actions. So, in this post, we are sharing our experience with the tool so far, and how we are migrating our projects, little by little to the tool.
+What is CI/CD? Martin Fowler, one of the original authors of the Agile Manifesto, describes them like this in this book:
+ Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day.">
+  <meta name="author" content="Ana Schwendler"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Ana Schwendler",
+    
+    "url": "https:\/\/www.anaschwendler.com\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/www.anaschwendler.com\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/www.anaschwendler.com\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/www.anaschwendler.com\/posts\/migrating-github-actions\/",
+          "name": "Migrating our ci to github actions"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Ana Schwendler"
+  },
+  "headline": "Migrating our CI to Github Actions",
+  "description" : "And how we did that in Tourlane\nNow in Tourlane we are switching our deployment system to use GitHub Actions. So, in this post, we are sharing our experience with the tool so far, and how we are migrating our projects, little by little to the tool.\nWhat is CI\/CD? Martin Fowler, one of the original authors of the Agile Manifesto, describes them like this in this book:\n Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day.",
+  "inLanguage" : "en",
+  "wordCount":  1072 ,
+  "datePublished" : "2019-12-16T00:00:00",
+  "dateModified" : "2019-12-16T00:00:00",
+  "image" : "https:\/\/www.anaschwendler.com\/img\/avatar-icon.jpeg",
+  "keywords" : [ "continuous integration, github actions, tourlane, software development, continuous deployment" ],
+  "mainEntityOfPage" : "https:\/\/www.anaschwendler.com\/posts\/migrating-github-actions\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/www.anaschwendler.com\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/www.anaschwendler.com\/img\/avatar-icon.jpeg",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Migrating our CI to Github Actions" />
+<meta property="og:description" content="And how we did that in Tourlane
+Now in Tourlane we are switching our deployment system to use GitHub Actions. So, in this post, we are sharing our experience with the tool so far, and how we are migrating our projects, little by little to the tool.
+What is CI/CD? Martin Fowler, one of the original authors of the Agile Manifesto, describes them like this in this book:
+ Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day.">
+<meta property="og:image" content="https://www.anaschwendler.com/img/avatar-icon.jpeg" />
+<meta property="og:url" content="https://www.anaschwendler.com/posts/migrating-github-actions/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ana Schwendler" />
+
+  <meta name="twitter:title" content="Migrating our CI to Github Actions" />
+  <meta name="twitter:description" content="And how we did that in Tourlane
+Now in Tourlane we are switching our deployment system to use GitHub Actions. So, in this post, we are sharing our experience with the tool so far, and how we are …">
+  <meta name="twitter:image" content="https://www.anaschwendler.com/img/avatar-icon.jpeg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@anaschwendler" />
+  <meta name="twitter:creator" content="@anaschwendler" />
+  <link href='https://www.anaschwendler.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.88.1" />
+  <link rel="alternate" href="https://www.anaschwendler.com/index.xml" type="application/rss+xml" title="Ana Schwendler"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://www.anaschwendler.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://www.anaschwendler.com/css/highlight.min.css" /><link rel="stylesheet" href="https://www.anaschwendler.com/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'XXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.anaschwendler.com/">Ana Schwendler</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Experiences" href="/page/experiences/">Experiences</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Events and Talks" href="/page/events/">Events and Talks</a>
+            </li>
+          
+        
+
+        
+          
+            <li>
+              
+                
+                  <a href="/br" lang="br">br</a>
+                
+              
+                
+              
+            </li>
+          
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Ana Schwendler" href="https://www.anaschwendler.com/">
+            <img class="avatar-img" src="https://www.anaschwendler.com/img/avatar-icon.jpeg" alt="Ana Schwendler" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>Migrating our CI to Github Actions</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>And how we did that in <a href="https://www.tourlane.com/">Tourlane</a></p>
+<p>Now in Tourlane we are switching our deployment system to use GitHub Actions. So, in this post, we are sharing our experience with the tool so far, and how we are migrating our projects, little by little to the tool.</p>
+<h2 id="what-is-cicd">What is CI/CD?</h2>
+<p>Martin Fowler, one of the original authors of the Agile Manifesto, describes them like this in <a href="https://martinfowler.com/books/duvall.html">this book</a>:</p>
+<blockquote>
+<p>Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.</p>
+</blockquote>
+<blockquote>
+<p>Continuous Delivery (CD) is the natural extension of Continuous Integration: an approach in which teams ensure that every change to the system is releasable, and that we can release any version at the push of a button. Continuous Delivery aims to make releases boring, so we can deliver frequently and get fast feedback on what users care about.</p>
+</blockquote>
+<p>##What are Github Actions</p>
+<p>GitHub has just released a version of its own CI/CD tool, which is called GitHub Actions. More information can be found in <a href="https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/">this blog post</a>. It helps you to:</p>
+<blockquote>
+<p>orchestrate any workflow, based on any event, while GitHub manages the execution, provides rich feedback, and secures every step along the way.</p>
+</blockquote>
+<p>For Tourlane, it looked a quite convenient tool to use — We already use GitHub for repository storage and collaboration, thus Actions facilitates the efforts of integrating the tools.</p>
+<p><img src="https://media.giphy.com/media/5r5J4JD9miis/giphy.gif" alt=""></p>
+<h2 id="how-we-used-to-do-it-before">How we used to do it before</h2>
+<p>At the beginning of the company, we used to use <a href="https://jenkins.io/doc/book/pipeline/">Jenkins</a> as a CI tool to deploy our applications. But then we switched to CircleCI because at that point it looked <strong>simple, faster and cheaper</strong>.</p>
+<p><img src="https://user-images.githubusercontent.com/4131432/97111186-b5495e80-16dd-11eb-8b57-1f0807949e9b.png" alt="image"></p>
+<p><img src="https://user-images.githubusercontent.com/4131432/97111198-c7c39800-16dd-11eb-828d-d84e88028be4.png" alt="image"></p>
+<p>So after that, even though each repository has its own specific rules, we basically used to use <a href="https://circleci.com/">CircleCI</a> to handle our continuous integrations. We had a file under the <code>.circleci</code> folder, called <code>config.yml</code>. Also, we had some environment keys configured for each project.</p>
+<p>On top of that, we have organized <code>Makefiles</code> that made the task of migrating even easier, so in the end, just had to migrate the commands to GitHub Actions’ own config file.</p>
+<p><img src="https://user-images.githubusercontent.com/4131432/97111221-ee81ce80-16dd-11eb-871f-1d7ebcf4cbd6.png" alt="image"></p>
+<p>The structure of the configuration didn’t have to change much, where we also have a file to coordinate how the build process should be and manage the deploy when in a staging/master branch.</p>
+<h2 id="why-we-decided-to-switch">Why we decided to switch</h2>
+<p>CircleCI served us well (and still is) but we decided to experiment with Github Actions in order to have a single platform where our codebase and CI/CD setup live as it makes onboarding easier as its one less tool to onboard new developers. While Github Actions is still new it comes with a lot of integrations that made our workflows faster and simpler.</p>
+<p><img src="https://user-images.githubusercontent.com/4131432/97111238-05c0bc00-16de-11eb-83ea-80c7483186dd.png" alt="image"></p>
+<h2 id="how-are-doing-it-now">How are doing it now</h2>
+<p>We started the migration slowly, first migrating some projects with fewer dependencies until we move to a project with more needs, this was the result:</p>
+<pre tabindex="0"><code>name: CI
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: ruby:2.6.5
+
+    services:
+      &lt;db_service_name&gt;:
+        image: postgres:10.6
+        ports: ['5432:5432']
+        options: &gt;-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@master
+
+      - uses: actions/cache@v1
+        with:
+          path: /usr/local/bundle
+          key: v1-gem-cache-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: v1-gem-cache
+
+      - name: Install dependencies
+        env:
+            BUNDLE_GITHUB__COM: ${{ secrets.BUNDLE_GITHUB__COM }}:x-oauth-basic
+        run: &quot;make deps&quot;
+
+      - name: Lint
+        run: &quot;make lint&quot;
+
+      - name: Test
+        env:
+            RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+            RAILS_ENV: &quot;test&quot;
+            DATABASE_URL: &quot;postgres://postgres@&lt;db_service_name&gt;:5432/&lt;db_name&gt;&quot;
+        run: &quot;make test&quot;
+
+  deploy:
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/staging'
+
+    runs-on: ubuntu-latest
+    needs: test
+
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Build Docker image
+        env:
+            BUNDLE_GITHUB__COM: ${{ secrets.BUNDLE_GITHUB__COM }}:x-oauth-basic
+        run: &quot;make build&quot;
+
+      - name: Deploy to staging
+        if: github.ref == 'refs/heads/staging'
+        run: DEPLOYER=${GITHUB_ACTOR} make deploy_to_staging
+
+      - name: Deploy to production
+        if: github.ref == 'refs/heads/master'
+        run: DEPLOYER=${GITHUB_ACTOR} make deploy_to_production
+</code></pre><h2 id="file-structure">File Structure</h2>
+<p><a href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#name">name</a></p>
+<p>Which just set the name of the workflow, in our case we named it CI since it does this part of our pipeline.</p>
+<p><a href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#on">on</a></p>
+<p>Here is an interesting setting where we can decide when this workflow will be triggered, it can be set as a <code>string</code>, an <code>array of events</code> and an <code>array of event types</code>, so it is very flexible and can do a lot of different actions.</p>
+<p>For us, since we want to do that on every push, we just set as a string <code>[push]</code>.</p>
+<p><a href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#jobs">jobs</a></p>
+<p>A workflow run is made up of one or more jobs. We configure two different jobs that suit our environment: test and deploy.</p>
+<ul>
+<li>
+<p><code>test</code>: Run on every branch, independent of its name. In this step, we basically set up the environment and all its dependencies (Postgres, Redis and so on), install app dependencies, run code linters/tests</p>
+</li>
+<li>
+<p><code>deploy</code>: If the target branch either <code>staging</code> or <code>master</code> we want to perform the deploy to the server, which in our case is on Amazon. So for it, we set up AWS environment variables, build the Docker Image for the app and lastly run the deploy job based on the <code>Makefile</code>.</p>
+</li>
+</ul>
+<h2 id="notes-and-difficulties">Notes and difficulties</h2>
+<h3 id="setting-up-environment-variables">Setting up environment variables</h3>
+<p>For every step in our workflow we setup environment variables which are set like <code>${{ secrets.VARIABLE_NAME }}</code> and they can be set in the Settings tab of the repository page, in the secrets section.</p>
+<h3 id="using-the-cache-action">Using the cache action</h3>
+<p>When we were sure that the CI we setup is running as we want, we set up the caching action in order to make it run faster in the next time we trigger it again. The <code>cache</code> action will attempt to restore a cache based on a <code>key</code> we provide.</p>
+<h3 id="database-service-name">Database service name</h3>
+<p>When configuring the service for the database, you need to make sure that the name of the service matches the name you set up when configuring the database URL.</p>
+<h3 id="no-support-for-private-docker-images">No support for private Docker Images</h3>
+<p>We used to use private docker images, and GitHub Actions doesn’t allow private images to run in its CI, yet. Also, that made us rethink why we don’t push our image to <a href="https://hub.docker.com/">Docker Hub</a>.</p>
+<h3 id="private-gems">Private gems</h3>
+<p>In our projects, we use some private gems to handle some authentication, and those led us to configure <a href="https://bundler.io/v1.15/bundle_config.html"><code>BUNDLE_GITHUB__COM</code></a> in order to use those, and this needs to be set up in the setting/secrets on your repository.</p>
+<h2 id="resources">Resources</h2>
+<ol>
+<li>
+<p>Go Rails article:
+<a href="https://gorails.com/episodes/github-actions-continuous-integration-ruby-on-rails">https://gorails.com/episodes/github-actions-continuous-integration-ruby-on-rails</a></p>
+</li>
+<li>
+<p>Workflow syntax for GitHub Actions:
+<a href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions">https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions</a></p>
+</li>
+</ol>
+<hr>
+<p>And that’s all folks! This is a summary of how we migrate our CI service to Github Actions!</p>
+<p><img src="https://media.giphy.com/media/xUPOqo6E1XvWXwlCyQ/giphy.gif" alt=""></p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://www.anaschwendler.com//tags/continuous-integration/">continuous integration</a>&nbsp;
+            
+              <a href="https://www.anaschwendler.com//tags/github-actions/">github actions</a>&nbsp;
+            
+              <a href="https://www.anaschwendler.com//tags/tourlane/">tourlane</a>&nbsp;
+            
+              <a href="https://www.anaschwendler.com//tags/software-development/">software development</a>&nbsp;
+            
+              <a href="https://www.anaschwendler.com//tags/continuous-deployment/">continuous deployment</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fwww.anaschwendler.com%2fposts%2fmigrating-github-actions%2f&amp;text=Migrating%20our%20CI%20to%20Github%20Actions&amp;via=anaschwendler" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.anaschwendler.com%2fposts%2fmigrating-github-actions%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fwww.anaschwendler.com%2fposts%2fmigrating-github-actions%2f&amp;title=Migrating%20our%20CI%20to%20Github%20Actions" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.anaschwendler.com%2fposts%2fmigrating-github-actions%2f&amp;title=Migrating%20our%20CI%20to%20Github%20Actions" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fwww.anaschwendler.com%2fposts%2fmigrating-github-actions%2f&amp;title=Migrating%20our%20CI%20to%20Github%20Actions" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.anaschwendler.com%2fposts%2fmigrating-github-actions%2f&amp;description=Migrating%20our%20CI%20to%20Github%20Actions" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+            
+          
+
+          
+                  <h4 class="see-also">See also</h4>
+                  <ul>
+                
+                
+                    <li><a href="/posts/open-source-quarantine/">Open Source Quarantine</a></li>
+                
+              </ul>
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+          
+            <li class="next">
+              <a href="https://www.anaschwendler.com/posts/setting-up-tests-for-django-plugins/" data-toggle="tooltip" data-placement="top" title="Setting up tests for Django Plugins">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:schwendler@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/anaschwendler" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/anaschwendler" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/anaschwendler" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/anaschwendler" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="anaschwendler.com">Ana Schwendler</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2021
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.anaschwendler.com/">Ana Schwendler</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.88.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://www.anaschwendler.com/js/main.js"></script>
+<script src="https://www.anaschwendler.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://www.anaschwendler.com/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

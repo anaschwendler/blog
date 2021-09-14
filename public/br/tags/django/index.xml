@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>django on Ana Schwendler</title>
+    <link>https://www.anaschwendler.com/br/tags/django/</link>
+    <description>Recent content in django on Ana Schwendler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>schwendler@gmail.com (Ana Schwendler)</managingEditor>
+    <webMaster>schwendler@gmail.com (Ana Schwendler)</webMaster>
+    <lastBuildDate>Sat, 04 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.anaschwendler.com/br/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configurando testes para Plugins Django</title>
+      <link>https://www.anaschwendler.com/br/posts/setting-up-tests-for-django-plugins/</link>
+      <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
+      <author>schwendler@gmail.com (Ana Schwendler)</author>
+      <guid>https://www.anaschwendler.com/br/posts/setting-up-tests-for-django-plugins/</guid>
+      <description>Teve uma ideia bacana de Plugin para Django? Não sabe como configurar testes sem criar uma aplicação Django no seu projeto? Seus problemas acabaram. Esse artigo foi escrito a partir de umpull request para Django Public Admin, usando django-stdimage como base.
+Django Public Admin é um plugin que ajusta o admin de sua aplicação Django como pública e em modo de apenas leitura. Ele usa Poetry para gerenciar pacotes e dependencias,pytest para rodar os testes em conjunto com pytest-django.</description>
+    </item>
+    
+  </channel>
+</rss>

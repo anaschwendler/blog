@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>djangogirls on Ana Schwendler</title>
+    <link>https://www.anaschwendler.com/br/tags/djangogirls/</link>
+    <description>Recent content in djangogirls on Ana Schwendler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>schwendler@gmail.com (Ana Schwendler)</managingEditor>
+    <webMaster>schwendler@gmail.com (Ana Schwendler)</webMaster>
+    <lastBuildDate>Fri, 21 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.anaschwendler.com/br/tags/djangogirls/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Organizando oficinas de tecnologia</title>
+      <link>https://www.anaschwendler.com/br/posts/organizando-oficinas-tecnologia/</link>
+      <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
+      <author>schwendler@gmail.com (Ana Schwendler)</author>
+      <guid>https://www.anaschwendler.com/br/posts/organizando-oficinas-tecnologia/</guid>
+      <description>Nos últimos anos tenho participado da organização de varias oficinas de tecnologia como Rails Girls e Django Girls. E por algum tempo vi várias pessoas querendo começar a organizar algo em sua cidade, mas sem saber como. Fica aqui minha visão de como organizar/liderar um evento com sucesso.
+Ninguém consegue nada sozinho Traga pessoas para se juntar a você nessa jornada. Eu não tenho palavras para as pessoas que encontrei nessas jornadas.</description>
+    </item>
+    
+  </channel>
+</rss>
