@@ -26,7 +26,17 @@ Sept 2020 -- Present
 
 Berlin, Germany
 
-Soon.
+In Marley Spoon I'm part of the CX Backend Logistics team.
+
+The team is responsible for everything related to delivery of good at the customer house.
+
+From integration with shippers (via API, via third party or CSV) to generating shipping labels, logistics team works closely with the Logistics Managers to make sure our boxes will be delivered.
+
+Main highlights:
+- We are working in a migration for AWS
+- Enhancing the integration with shippers.
+
+Also, I'm working closely with People & Culture team by interviewing new team members, making sure that the culture that the company has makes a fit technologically as well :)
 
 ### Software Engineer
 
