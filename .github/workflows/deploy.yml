@@ -1,15 +1,17 @@
 name: CI
 
-on: push
+on:
+  push:
+    branches: [main]
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Git checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.64.0"
 
@@ -17,7 +19,7 @@ jobs:
         run: hugo 
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.TOKEN }}
           external_repository: anaschwendler/anaschwendler.github.io
