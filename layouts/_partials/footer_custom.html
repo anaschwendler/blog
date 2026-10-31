@@ -1,0 +1,7 @@
+{{- with .Site.Menus.footer }}
+<div class="container">
+  <p class="credits text-muted text-center">
+    {{- range $i, $item := . }}{{ if $i }}&nbsp;&bull;&nbsp;{{ end }}<a href="{{ $item.URL | relLangURL }}">{{ $item.Name }}</a>{{ end -}}
+  </p>
+</div>
+{{- end }}

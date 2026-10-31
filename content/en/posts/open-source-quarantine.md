@@ -16,7 +16,7 @@ First timers only is a platform to show where to start on contributing to projec
 
 More info @ https://www.firsttimersonly.com/
 
-![](https://media.giphy.com/media/ChpOyeacGmpQk/giphy.gif)
+![](/img/gifs/ChpOyeacGmpQk.gif)
 
 ## Open Source Guides
 
@@ -31,13 +31,13 @@ More info @ https://www.firsttimersonly.com/
 
 More info @ https://opensource.guide/
 
-![](https://media.giphy.com/media/11BDDJSlJZ2uha/giphy.gif)
+![](/img/gifs/11BDDJSlJZ2uha.gif)
 
 ## First contributions
 
 "[Make your first open source contribution in 5 minutes](https://firstcontributions.github.io/)". This one is for the people that want to go directly to a project, pick an issue and develop, already know what to do? Just want to pick a project and run, that is your place!
 
-![](https://media.giphy.com/media/xl3Biy7X0kRlzlQBx4/giphy.gif)
+![](/img/gifs/xl3Biy7X0kRlzlQBx4.gif)
 
 More info @ https://firstcontributions.github.io/
 
@@ -50,7 +50,7 @@ If you want to go directly to the point, there are some labels on GitHub that ar
 - [up for grabs](https://github.com/search?q=label%3A%22Up+For+Grabs%22&type=Issues)
 - [first timers only](https://github.com/search?q=label%3A%22first+timers+only%22&type=Issues)
 
-![](https://media.giphy.com/media/3oriff9H9wrFfKfrq0/giphy.gif)
+![](/img/gifs/3oriff9H9wrFfKfrq0.gif)
 
 ## Not happy yet?
 
@@ -62,4 +62,4 @@ More info @ https://github.com/MunGell/awesome-for-beginners
 
 A lot to do right? Don’t forget to take care of yourself, wash your hands, eat well, don’t pack toilet paper and as Cardi B says:
 
-![](https://media.giphy.com/media/ihTDYfbBNYq0LWwdKy/giphy.gif)
+![](/img/gifs/ihTDYfbBNYq0LWwdKy.gif)

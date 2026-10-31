@@ -28,12 +28,11 @@ theme = "beautifulhugo"
   dateFormat = ":date_long"
   commit = false
   rss = true
-  comments = true
   readingTime = true
   wordCount = true
   colorScheme = "auto"
+  selfHosted = true # serve fonts and libraries from this domain (GDPR)
   socialShare = true
-  delayDisqus = true
   showRelatedPosts = true
 
   [params.author]
@@ -66,6 +65,10 @@ theme = "beautifulhugo"
       name = "Events and Talks"
       url = "page/events/"
       weight = 4
+    [[languages.en.menus.footer]]
+      name = "Privacy"
+      url = "page/privacy/"
+      weight = 1
 
   [languages.br]
     contentDir = "content/br" # Brazilian Portuguese
@@ -90,3 +93,7 @@ theme = "beautifulhugo"
       name = "Eventos e Palestras"
       url = "page/events/"
       weight = 4
+    [[languages.br.menus.footer]]
+      name = "Privacidade"
+      url = "page/privacy/"
+      weight = 1

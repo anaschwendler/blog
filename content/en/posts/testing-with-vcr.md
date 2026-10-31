@@ -11,7 +11,7 @@ Part of this task, as a software developer, is making sure the code I write is w
 
 In this post I'll explain how I've been learning to use it and why I think it is useful.
 
-![](https://media.giphy.com/media/xT1R9RfuBqWvfo8oDe/giphy.gif)
+![](/img/gifs/xT1R9RfuBqWvfo8oDe.gif)
 
 ## What is a mock test?
 

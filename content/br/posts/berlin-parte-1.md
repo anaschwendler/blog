@@ -18,7 +18,7 @@ Com a aprovação em mãos, começa a jornada.
 
 Comecei a estudar e me informar como aplicar para empresas pra fora do país, sem nenhuma especifidade, bem mente aberta pra países, formatos, desde que fosse uma empresa que se preocupa com diversidade e com um ambiente realmente saudável.
 
-![](https://media.giphy.com/media/2RMa1wwSUMMsU/giphy.gif)
+![](/img/gifs/2RMa1wwSUMMsU.gif)
 *Partiu aplicar. Fonte: https://giphy.com/*
 
 ### Aplicando pra empresas.
@@ -34,7 +34,7 @@ Comecei aplicando pra empresas que ouvi falar, pra vagas específicas, e depois 
 3. Contratação
 <br>Quando ao fim, se encontra uma empresa que combina com o seu perfil, começa o processo de contratação, relocação (caso necessário — no meu caso, foi necessário) e todos os trâmites necessários com uma empresa que trabalha especificamente com esse tipo de caso de contratação.
 
-![](https://media.giphy.com/media/NtfalGC5fbIAw/giphy.gif)
+![](/img/gifs/NtfalGC5fbIAw.gif)
 *Aplicando pra empresas. Fonte: https://giphy.com/*
 
 #### Como é o mercado tech, aquecido, principais demandas?
@@ -73,7 +73,7 @@ Não cogitamos não levar nosso gato junto, então precisamos planejar a mudanç
 Sim, e se existem curiosidades no processo de como trazer gatos para a europa, um dos materiais mais completos é o do [Awesome Berlin](https://marlonbernardes.github.io/awesome-berlin/pt-br/pages/trazendo-pet-do-brasil.html) (vou falar mais fontes de informação depois).
 Pra trazer o Max, foram necessários 4 meses de preparação, o que fez o Irio se mudar mais tarde: eu mudei no final de março, e eles vieram mais tarde, no final de junho.
 
-![](https://cdn-images-1.medium.com/max/1600/1*DiNydMAhx_nddzekkqDWFQ.jpeg)
+![](/img/posts/medium-DiNydMAhx_nddzekkqDWFQ.jpeg)
 *Max animadíssimo com a mudança. Fonte: Irio Musskopf.*
 
 Não vou me extender muito, mas basicamente existem 6 passos para trazer seu pet pra cá: microchipagem (__ISO 11784 ou 11785__), vacinação anti-rábica,
@@ -99,7 +99,7 @@ Mas num geral, na minha opinião dá pra viver bem sim, os impostos são altos, 
 
 ### E se eu quiser ir para aí?
 
-![](https://media.giphy.com/media/l0MYzAwMPl8s0jtSg/giphy.gif)
+![](/img/gifs/l0MYzAwMPl8s0jtSg.gif)
 *Fonte: https://giphy.com/*
 
 #### Quanto tempo antes preciso ir me preparando?

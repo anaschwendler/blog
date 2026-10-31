@@ -15,7 +15,7 @@ Existem muitas postagens que já abordam como contribuir com o código aberto, e
 
 Mais informações em: https://www.firsttimersonly.com/
 
-![](https://media.giphy.com/media/ChpOyeacGmpQk/giphy.gif)
+![](/img/gifs/ChpOyeacGmpQk.gif)
 
 ## Open Source Guides
 
@@ -30,13 +30,13 @@ Mais informações em: https://www.firsttimersonly.com/
 
 Mais informações em: https://opensource.guide/pt/
 
-![](https://media.giphy.com/media/11BDDJSlJZ2uha/giphy.gif)
+![](/img/gifs/11BDDJSlJZ2uha.gif)
 
 ## First contributions
 
 "[Faça sua primeira contribuição de código aberto em 5 minutos](https://firstcontributions.github.io/)". Este é para as pessoas que querem ir diretamente ao ponto, escolher uma issue e desenvolver. Já sabe o que quer fazer? Só quer escolher um projeto e sair codando? Esse é o seu lugar!
 
-![](https://media.giphy.com/media/xl3Biy7X0kRlzlQBx4/giphy.gif)
+![](/img/gifs/xl3Biy7X0kRlzlQBx4.gif)
 
 Mais informações em: https://firstcontributions.github.io/
 
@@ -49,7 +49,7 @@ Se você quiser ir mais diretamente ao assunto ainda, existem algumas labels no 
 - [up for grabs](https://github.com/search?q=label%3A%22Up+For+Grabs%22&type=Issues)
 - [first timers only](https://github.com/search?q=label%3A%22first+timers+only%22&type=Issues)
 
-![](https://media.giphy.com/media/3oriff9H9wrFfKfrq0/giphy.gif)
+![](/img/gifs/3oriff9H9wrFfKfrq0.gif)
 
 ## Ainda não tá bom @?
 
@@ -61,4 +61,4 @@ Mais informações em: https://jtemporal.com/projetos-brasileiros-para-fazer-pul
 
 Muita coisa pra fazer né? Não esqueça de se cuidar, lavar as mãos e para de comprar papel higiênico e como Cardi B disse:
 
-![](https://media.giphy.com/media/ihTDYfbBNYq0LWwdKy/giphy.gif)
+![](/img/gifs/ihTDYfbBNYq0LWwdKy.gif)

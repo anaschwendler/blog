@@ -11,7 +11,7 @@ the need of constantly being studying, learning and updating yourself. And as ha
 this constant effort of gathering information, last year, I found myself a bit lost in the process.
 I was tired of reading and doing courses, and was struggling to find a sparkle to code every day again.
 
-![](https://media.giphy.com/media/3orif0olmGNHtrBnXO/giphy.gif)
+![](/img/gifs/3orif0olmGNHtrBnXO.gif)
 
 Also, I found this pattern in most of my colleagues as we got tired of staying at home only (due to the pandemic). So I started thinking about what could bring me joy in programming again.
 Then I heard about [exercism.io](https://exercism.io/) (of course there are many other tools that have the same concept, but I had a good time with Exercism).
@@ -29,7 +29,7 @@ What were the lessons I've learned in this process:
 
 I was struggling a lot to have focus on my tasks and was having the feeling that was hard to centralize my attention to finishing one task.
 
-![](https://media.giphy.com/media/3o6fJb3wLZeWqHu5os/giphy.gif)
+![](/img/gifs/3o6fJb3wLZeWqHu5os.gif)
 
 2. Deep diving in learning what programming languages can offer:
 
@@ -47,7 +47,7 @@ In the beginning, to get the consistency I wanted I stuck to Exercism, but after
 
 For me, that helped with the motivation of seeing my consistency in the board, as well as by seeing other people's effort, you start gaining the feeling that you are not alone in the search for meaning for coding.
 
-![](https://media.giphy.com/media/8UGGp7rQvfhe63HrFq/giphy.gif)
+![](/img/gifs/8UGGp7rQvfhe63HrFq.gif)
 
 All this structure behind trying to find something that would make me feel like coding again, helped me a lot to start feeling confident with what I'm writing and delivering daily on my work time. And as so, I started to feel that this wasn't helping anymore, so while talking to my team in one of our 1:1, I started coming up with a plan to get one step forward.
 
@@ -68,12 +68,12 @@ For me at that point, what seemed attractive was to do a small board game, tryin
 Basically all areas, right? But it is nice to find one that is your interest in the middle of so many options.
 For me, it is linguistics, I adore the way we can work with language using code and the number of things we can learn while experiencing how machines try to reproduce human reading behavior.
 
-![](https://media.giphy.com/media/citBl9yPwnUOs/giphy.gif)
+![](/img/gifs/citBl9yPwnUOs.gif)
 
 It is quite hard to keep motivated while living in extreme times, but in the middle of this I'm working on trying to find ways to see code as I saw when I started university: as something fun to solve big problems. There is a lot that can be done in order to enhance your skills, but at this point, I just wanted to share this small bit of information on how I found bliss in my work even after a long time doing it.
 
 Hope it can be nice to everyone reading it! See yall in the future!
 
-![](https://media.giphy.com/media/yyVph7ANKftIs/giphy.gif)
+![](/img/gifs/yyVph7ANKftIs.gif)
 
 Ana

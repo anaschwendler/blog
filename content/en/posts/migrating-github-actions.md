@@ -25,21 +25,21 @@ GitHub has just released a version of its own CI/CD tool, which is called GitHub
 
 For Tourlane, it looked a quite convenient tool to use — We already use GitHub for repository storage and collaboration, thus Actions facilitates the efforts of integrating the tools.
 
-![](https://media.giphy.com/media/5r5J4JD9miis/giphy.gif)
+![](/img/gifs/5r5J4JD9miis.gif)
 
 ## How we used to do it before
 
 At the beginning of the company, we used to use [Jenkins](https://jenkins.io/doc/book/pipeline/) as a CI tool to deploy our applications. But then we switched to CircleCI because at that point it looked **simple, faster and cheaper**.
 
-![image](https://user-images.githubusercontent.com/4131432/97111186-b5495e80-16dd-11eb-8b57-1f0807949e9b.png)
+![image](/img/posts/97111186-b5495e80-16dd-11eb-8b57-1f0807949e9b.png)
 
-![image](https://user-images.githubusercontent.com/4131432/97111198-c7c39800-16dd-11eb-828d-d84e88028be4.png)
+![image](/img/posts/97111198-c7c39800-16dd-11eb-828d-d84e88028be4.png)
 
 So after that, even though each repository has its own specific rules, we basically used to use [CircleCI](https://circleci.com/) to handle our continuous integrations. We had a file under the `.circleci` folder, called `config.yml`. Also, we had some environment keys configured for each project.
 
 On top of that, we have organized `Makefiles` that made the task of migrating even easier, so in the end, just had to migrate the commands to GitHub Actions’ own config file.
 
-![image](https://user-images.githubusercontent.com/4131432/97111221-ee81ce80-16dd-11eb-871f-1d7ebcf4cbd6.png)
+![image](/img/posts/97111221-ee81ce80-16dd-11eb-871f-1d7ebcf4cbd6.png)
 
 The structure of the configuration didn’t have to change much, where we also have a file to coordinate how the build process should be and manage the deploy when in a staging/master branch.
 
@@ -47,7 +47,7 @@ The structure of the configuration didn’t have to change much, where we also h
 
 CircleCI served us well (and still is) but we decided to experiment with Github Actions in order to have a single platform where our codebase and CI/CD setup live as it makes onboarding easier as its one less tool to onboard new developers. While Github Actions is still new it comes with a lot of integrations that made our workflows faster and simpler.
 
-![image](https://user-images.githubusercontent.com/4131432/97111238-05c0bc00-16de-11eb-83ea-80c7483186dd.png)
+![image](/img/posts/97111238-05c0bc00-16de-11eb-83ea-80c7483186dd.png)
 
 ## How are doing it now
 
@@ -179,4 +179,4 @@ https://help.github.com/en/actions/automating-your-workflow-with-github-actions/
 
 And that’s all folks! This is a summary of how we migrate our CI service to Github Actions!
 
-![](https://media.giphy.com/media/xUPOqo6E1XvWXwlCyQ/giphy.gif)
+![](/img/gifs/xUPOqo6E1XvWXwlCyQ.gif)

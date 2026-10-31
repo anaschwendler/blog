@@ -10,14 +10,14 @@ Nos últimos anos tenho participado da organização de varias oficinas de tecno
 
 Traga pessoas para se juntar a você nessa jornada. Eu não tenho palavras para as pessoas que encontrei nessas jornadas. São pessoas incríveis e sem elas eu nunca teria iniciado nada. Só comecei a me interessar por isso por que fui inspirada imensamente por pessoas sensacionais.
 
-![](https://cdn-images-1.medium.com/max/1600/1*6LB7yGxFkc0o4SNgXnHgCg.gif)
+![](/img/posts/medium-6LB7yGxFkc0o4SNgXnHgCg.gif)
 *#vamotime*
 
 ### Tenha sempre ciência do todo
 
 Esteja sempre pensando em tudo, todo o tempo. Pode acontecer de você solucionar um problema ao conversar sobre outro.
 
-![](https://media.giphy.com/media/MsWnkCVSXz73i/giphy.gif)
+![](/img/gifs/MsWnkCVSXz73i.gif)
 *“Se eu pegar isso e aplicar lá, acho que dá”*
 
 ### Primeiros passos: Local, dias e horário
@@ -32,7 +32,7 @@ Não precisa dizer exatamente que vão ter 60 ou 100 pessoas, mas estime para sa
 
 Como falei antes, ninguém consegue fazer tudo sozinho, divida as tarefas (que já são várias) entre as pessoas do seu grupo, e se não for suficiente, busque mais pessoas para ajudar.
 
-![](https://media.giphy.com/media/mwQhY0lABPSzS/giphy.gif)
+![](/img/gifs/mwQhY0lABPSzS.gif)
 
 ### Estruturação do evento: postagens, chamando pessoas e interagindo
 
@@ -57,7 +57,7 @@ O que eu descobri ano passado é que empresas grandes planejam no fim do ano o q
 
 Como falei antes, é legal termos brindes, além de na maior parte das vezes serem bem úteis (como cadernos, ecobags) é uma forma de lembrar do evento. Não tenha medo de pedir para empresas que admira. Esse ano pedimos uma lembrancinha para uma empresa de brownies que gostamos muito e eles gentilmente nos cederam lembrancinhas!
 
-![](https://cdn-images-1.medium.com/max/1600/1*DXRuki1X0WFcbeW8RC_7Tg.jpeg)
+![](/img/posts/medium-DXRuki1X0WFcbeW8RC_7Tg.jpeg)
 *Essa é a imagem de tudo que conseguimos no Rails Girls Novo Hamburgo (imagem da Amanda Silva Vieira)*
 
 ### Materiais gráficos
@@ -68,7 +68,7 @@ Aqui entram várias opções do que fazer. Nos eventos que participei preparamos
 * Adesivos do evento: quem não gosta de adesivos? São lindos!
 * Crachás: para identificar todo mundo, eu guardo todos que ganho.
 
-![](https://cdn-images-1.medium.com/max/1600/1*sURYmP3lhM_kj_r0RfGQJg.jpeg)
+![](/img/posts/medium-sURYmP3lhM_kj_r0RfGQJg.jpeg)
 *Esses são os materiais gráficos do primeiro Rails Girls Novo Hamburgo em 2016. (fonte: http://railsgirls.com/novohamburgo)*
 
 ### Formulários de inscrição
@@ -97,7 +97,7 @@ Claro, que com facilidades vem algumas desvantagens. Utilizar ambientes online c
 É bom ter uma pausa, aprender algo novo cansa bastante, tanto quem ensina, quanto quem aprende. É interessante ter esse horário organizado na agenda :)
 Assim como ter alguns lanches para serem consumidos no meio tempo, durante a oficina se alguém puder passar com pratinhos de lanche e talvez café nas mesas é ótimo!
 
-![](https://media.giphy.com/media/7qV3yswT0K8hi/giphy.gif)
+![](/img/gifs/7qV3yswT0K8hi.gif)
 *Café, tenham sempre café ❤*
 
 ### Preparando treinadores
@@ -116,7 +116,7 @@ Ao selecionar participantes não esqueça de valorizar diversidade e dê priorid
 Quando enviar e-mail para as participantes, tanto selecionadas, quanto na fila de espera, __não esqueça de enviar em bcc__, para manter a privacidade das participantes.
 Confira periodicamente quem respondeu e marque na sua planilha de presença, assim que notar que já temos um número considerável de meninas que não virão, envie e-mail para a fila de espera.
 
-![](https://media.giphy.com/media/QW5nKIoebG8y4/giphy.gif)
+![](/img/gifs/QW5nKIoebG8y4.gif)
 
 ### Adicionais: Espaço para crianças
 

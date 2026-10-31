@@ -68,4 +68,4 @@ DJANGO_SETTINGS_MODULE=tests.settings
 
 And that is it, now you can set up your tests for Django Plugins without creating an app for testing using `pytest`.
 
-![](https://media.giphy.com/media/l0HlGS7yQ9AUwlY52/giphy.gif)
+![](/img/gifs/l0HlGS7yQ9AUwlY52.gif)
