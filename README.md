@@ -1,18 +1,25 @@
 ## Referência para o meu blog.
 
-## Como usa:
+Feito com [Hugo](https://gohugo.io/) e o tema [Beautiful Hugo](https://github.com/halogenica/beautifulhugo) (como git submodule em `themes/beautifulhugo`).
 
-[Base para como usar theme](https://gohugo.io/getting-started/quick-start/)
+## Setup
 
-[Base para deploy via Github Actions](https://ruddra.com/hugo-deploy-static-page-using-github-actions/)
+```
+brew install hugo
+git clone --recurse-submodules git@github.com:anaschwendler/blog.git
+```
 
-As mudanças são feitas aqui nesse repositório de blog, vide flow
+Se já clonou sem os submodules:
+
+```
+git submodule update --init
+```
 
 ## Flow geral
 
-1. Adiciona a postagem para `en` (se inglês) ou `br` (se português)
+1. Adiciona a postagem para `content/en` (se inglês) ou `content/br` (se português)
 2. Commita e pusha para esse repositório
-3. Github Actions vai fazer o commit para `anaschwendler.github.io` que é onde está o Github Pages
+3. Github Actions vai fazer o build e o commit para `anaschwendler.github.io` que é onde está o Github Pages
 
 ## Como roda o blog:
 
@@ -20,17 +27,13 @@ As mudanças são feitas aqui nesse repositório de blog, vide flow
 hugo server
 ```
 
-Ainda se comita as mudanças pra cá
+A pasta `public/` é gerada pelo build e não é commitada.
 
-## Como faz deploy:
+## Como atualiza:
 
-Atualmente o deploy é feito via Github Actions :tada:
+- Tema: o Dependabot abre PR mensal atualizando o submodule (ou manualmente: `git submodule update --remote`)
+- Hugo: atualiza `hugo-version` em `.github/workflows/deploy.yml` (e `brew upgrade hugo` local)
 
-E o que o Github Actions faz é fazer o deploy para o repositório principal do blog `anaschwendler.github.io`
+Customizações de layout vão em `layouts/` na raiz (sobrescrevem o tema); não edita nada dentro de `themes/`.
 
-<!-- Ana do passado para a Ana do futuro: tu mudou isso em 2021 para fazer via Github Actions, deixou o comentário apenas para referência. Tu não vai lembrar disso no futuro. -->
-<!-- Isso faz o deploy do blog (pasta `/public`) para meu repositório do github.io:
-
-```
-./deploy.sh "Mensagem de commit"
-``` -->
+<!-- Ana do passado para a Ana do futuro: em 2026 o tema virou submodule e o Hugo foi de 0.64 para 0.169. Antes disso o tema inteiro estava copiado em layouts/, i18n/, data/ e static/. -->

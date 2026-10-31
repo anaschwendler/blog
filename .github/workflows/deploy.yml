@@ -3,22 +3,28 @@ name: CI
 on:
   push:
     branches: [main]
+  pull_request:
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          submodules: true
 
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.64.0"
+          hugo-version: "0.169.0"
+          extended: true
 
       - name: Build
-        run: hugo 
+        run: hugo --gc --minify
 
       - name: Deploy
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.TOKEN }}
