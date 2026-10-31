@@ -12,6 +12,8 @@ comments: false
 Ongoing  
 Berlin, Germany
 
+I keep organising Django Girls Berlin, and soon we'll be launching a Verein: [PyRise](https://pyrise.org/), free and beginner-friendly coding workshops for underrepresented people in tech across Germany.
+
 ### Django Girls Leipzig
 
 #### Mentor

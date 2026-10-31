@@ -12,6 +12,8 @@ comments: false
 Atualmente  
 Berlim, Alemanha
 
+Sigo organizando o Django Girls Berlin, e em breve vamos lançar uma Verein (associação sem fins lucrativos): a [PyRise](https://pyrise.org/), com workshops de programação gratuitos e para iniciantes, voltados a pessoas sub-representadas na tecnologia em toda a Alemanha.
+
 ### Django Girls Leipzig
 
 #### Mentor
