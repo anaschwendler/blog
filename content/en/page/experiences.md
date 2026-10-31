@@ -18,25 +18,41 @@ Scientific Initiation in developing a web based system using Google Maps API, st
 
 ## Experience
 
+### Senior Backend Engineer
+
+#### Vinted
+
+Sept 2023 -- Present
+
+Berlin, Germany
+
+As part of the Ontologies team at Vinted, I focus on optimizing item discovery across the marketplace, including fashion and books. My work focuses on modernizing the architecture, specifically extracting catalog services from the legacy monolith to build scalable, future-proof infrastructure.
+
+Main highlights:
+- Collaborating within the Ontologies team to enhance item discovery and manage complex catalog trees
+- Driving the extraction of catalog domains from a legacy monolith into standalone, high-performance microservices
+- Designing future-proof and scalable architectural solutions to support massive marketplace traffic
+- Developing backend services and high-volume data pipelines using Go
+
 ### Software Engineer
 
 #### Marley Spoon
 
-Sept 2020 -- Present
+Sept 2020 -- June 2023
 
 Berlin, Germany
 
-In Marley Spoon I'm part of the CX Backend Logistics team.
+In Marley Spoon I was part of the CX Backend Logistics team.
 
 The team is responsible for everything related to delivery of good at the customer house.
 
 From integration with shippers (via API, via third party or CSV) to generating shipping labels, logistics team works closely with the Logistics Managers to make sure our boxes will be delivered.
 
 Main highlights:
-- We are working in a migration for AWS
-- Enhancing the integration with shippers.
+- Worked on a migration to AWS
+- Enhanced the integration with shippers.
 
-Also, I'm working closely with People & Culture team by interviewing new team members, making sure that the culture that the company has makes a fit technologically as well :)
+Also, I worked closely with People & Culture team by interviewing new team members, making sure that the culture that the company has makes a fit technologically as well :)
 
 ### Software Engineer
 

@@ -1,130 +1,150 @@
 ---
-title: Experiences
+title: Experiências
 comments: false
 ---
 
-obs: tradução em curso..
+## Formação
 
-## Education and Courses
+### Bacharelado em Ciência da Computação
 
-### Bachelor in Computer Science
+#### Universidade Federal do Rio Grande do Sul (UFRGS)
 
-#### Federal University of Rio Grande do Sul
+Mar 2011 -- Dez 2016
 
-Mar 2011 -- Dec 2016
+Porto Alegre, Brasil
 
-Porto Alegre, Brazil
+TCC sobre Processamento de Linguagem Natural (PLN), usando uma abordagem de Ciência de Dados para sumarização automática de textos.  
+Iniciação Científica no desenvolvimento de um sistema web com a API do Google Maps.
 
-Final thesis based on studies of NLP using a Data Science approach in text summarizing.  
-Scientific Initiation in developing a web based system using Google Maps API, studying about its.
+## Experiência
 
-## Experience
+### Engenheira de Software Sênior (Backend)
 
-### Software Engineer
+#### Vinted
+
+Set 2023 -- Atual
+
+Berlim, Alemanha
+
+Faço parte do time de Ontologias da Vinted, onde trabalho para que as pessoas encontrem mais facilmente o que procuram no marketplace, de moda a livros. Meu foco é modernizar a arquitetura, tirando os serviços de catálogo do monolito legado para construir uma infraestrutura escalável e preparada para o futuro.
+
+Destaques:
+- Trabalho junto com o time de Ontologias para melhorar a descoberta de itens e manter as árvores de catálogo, que são bem complexas
+- Lidero a extração de domínios do catálogo do monolito para microsserviços independentes e de alta performance
+- Desenho soluções de arquitetura escaláveis, que aguentam o volume enorme de acessos do marketplace
+- Desenvolvo serviços de backend e pipelines de dados de alto volume em Go
+
+### Engenheira de Software
 
 #### Marley Spoon
 
-Sept 2020 -- Present
+Set 2020 -- Jun 2023
 
-Berlin, Germany
+Berlim, Alemanha
 
-Soon.
+Na Marley Spoon, fiz parte do time de Logística do CX Backend.
 
-### Software Engineer
+O time cuidava de tudo que envolve fazer a caixa chegar até a casa de quem comprou: das integrações com as transportadoras (via API, via terceiros ou por CSV) à geração das etiquetas de envio. A gente trabalhava bem perto das pessoas que gerenciavam a logística para garantir que as entregas chegassem certinho.
+
+Destaques:
+- Participei da migração para a AWS
+- Melhorei as integrações com as transportadoras
+
+Também participei das contratações junto com o time de People & Culture, fazendo entrevistas e ajudando a garantir que quem chegasse combinasse com a cultura da empresa, inclusive na parte técnica :)
+
+### Engenheira de Software
 
 #### Tourlane
 
-July 2019 -- Sept 2020
+Jul 2019 -- Set 2020
 
-Berlin, Germany
+Berlim, Alemanha
 
-In Tourlane, I am currently working on enhancing the tools that the company use internally for the Sales Agents.
-Also worked on infrastructure moving our CI to GitHub Actions, and produced a blog post on this topic.
-Our team uses Continuous Integration/ Deployment, also we work a lot with APIs connections and micro services.  
+Na Tourlane, trabalhei melhorando as ferramentas internas usadas pelo time de vendas.  
+Também trabalhei com infraestrutura, migrando nosso CI para o GitHub Actions, e escrevi [um post sobre isso](/posts/migrating-github-actions/) (em inglês).  
+O time trabalhava com integração e deploy contínuos, além de muitas integrações via API e microsserviços.
 
-### Software Developer
+### Desenvolvedora de Software
 
 #### Mailbutler
 
-April 2018 -- May 2019
+Abr 2018 -- Mai 2019
 
-Berlin, Germany
+Berlim, Alemanha
 
-Building an analytics structure for the company, both for internal and external purpose.  
-Working in building a test structure for unit, integration and interface.  
-Working with a backend in Ruby on Rails.  
-Working with API integrations/services.  
-Working integrated with other teams for frontends (Apple Mail and Google Chrome Extension).
+Construí a estrutura de analytics da empresa, tanto para uso interno quanto para clientes.  
+Montei a estrutura de testes unitários, de integração e de interface.  
+Trabalhei no backend em Ruby on Rails, com integrações e serviços via API.  
+Trabalhei junto com os times dos frontends (Apple Mail e extensão para o Google Chrome).
 
-### Data Scientist
+### Cientista de Dados
 
 #### Data Science Brigade
 
 Jan 2017 -- Jan 2018  
-Porto Alegre, Brazil
+Porto Alegre, Brasil
 
-Data Science Brigade is a Data Science consultancy. Responsible for the Serenata de Amor Operation. As a Data Scientist, I was responsible for developing models that can identify anomalies in data and scrapping tools.  
-Worked specifically with: Python, Django, Jupiter Notebooks for analysis, spark.
+A Data Science Brigade é uma consultoria de Ciência de Dados, responsável pela Operação Serenata de Amor. Como cientista de dados, desenvolvi modelos para identificar anomalias nos dados e ferramentas de scraping.  
+Trabalhei principalmente com Python, Django, Jupyter Notebooks para análise e Spark.
 
-### Full Stack Developer
+### Desenvolvedora Full Stack
 
 #### Codeland
 
-Feb 2016 -- Dec 2016  
-Porto Alegre, Brazil
+Fev 2016 -- Dez 2016  
+Porto Alegre, Brasil
 
-CODELAND was a company committed to the full development of applications by using Ruby on Rails plans, from the product design to the end of the project.  
-Responsible for the Serenata de Amor Operation.  
-Uses Ruby on Rails technologies, which is responsible from many projects from many areas of discovery.  
-Uses remote work, which allows its workers to learn how to manage their times.  
-Uses agile methodology (scrum) and e coding version control.
+A Codeland era uma empresa dedicada ao desenvolvimento completo de aplicações em Ruby on Rails, do design do produto até a entrega final do projeto, com clientes de áreas bem diferentes.  
+Também foi responsável pela Operação Serenata de Amor.  
+O trabalho era remoto, o que me ensinou muito sobre organizar meu próprio tempo.  
+Usávamos metodologia ágil (Scrum) e controle de versão.
 
-### Front End Developer
+### Desenvolvedora Front-end
 
 #### Nitro Digital
 
-Nov 2015 -- Apr 2016  
-Porto Alegre, Brazil
+Nov 2015 -- Abr 2016  
+Porto Alegre, Brasil
 
-Digital agency with an email marketing system.  
-Worked on the development of a marketing e-mail tool, focusing on front end: HTML, HTML5, CSS, CSS3, SASS, grunt, Javascript. Uses agile methodology (scrum) and e coding version control.
+Agência digital com uma ferramenta própria de e-mail marketing.  
+Trabalhei no desenvolvimento dessa ferramenta, com foco no front-end: HTML5, CSS3, Sass, Grunt e JavaScript. Usávamos metodologia ágil (Scrum) e controle de versão.
 
-### Web Development Researcher
+### Pesquisadora em Desenvolvimento Web
 
 #### INF - UFRGS
 
-Aug 2015 -- Dec 2016  
-Porto Alegre, Brazil
+Ago 2015 -- Dez 2016  
+Porto Alegre, Brasil
 
-College Scientific Initiation on Campus.  
-Development of a web system, in the languages: HTML, HTML5, CSS, CSS3 and Javascript. Also developed skills using Angular JS and Google Maps API in this project.
+Iniciação Científica no Instituto de Informática.  
+Desenvolvimento de um sistema web com HTML5, CSS3 e JavaScript, onde também aprendi AngularJS e a API do Google Maps.
 
-### Web Development
+### Desenvolvedora Web
 
 #### NAPEAD - UFRGS
 
-May 2014 -- July 2015  
-Porto Alegre, Brazil
+Mai 2014 -- Jul 2015  
+Porto Alegre, Brasil
 
-Online Studies Sector on Campus  
-Development of learning objects in languages: PHP, HTML, HTML5, CSS, CSS3, Javascript and Java (mobile applications). Development of learning objects (games) in Unity3d.
+Núcleo de Educação a Distância da universidade.  
+Desenvolvimento de objetos de aprendizagem com PHP, HTML5, CSS3, JavaScript e Java (aplicativos mobile), além de jogos educativos em Unity3D.
 
-### Web Developer
+### Desenvolvedora Web
 
 #### Oficial Comunicação e Marketing
 
-June 2013 -- Aug 2013  
-Porto Alegre, Brazil
+Jun 2013 -- Ago 2013  
+Porto Alegre, Brasil
 
-Company of Marketing and Communication.  
-Worked on the development of hot promotional websites, corporation websites, and worked with general web programming, using: HTML, HTML5, CSS, CSS3, Javascript e jQuery.
+Agência de comunicação e marketing.  
+Desenvolvimento de hotsites promocionais, sites institucionais e programação web em geral, com HTML5, CSS3, JavaScript e jQuery.
 
-### PHP Developer
+### Desenvolvedora PHP
 
-#### CPD-UFRGS
+#### CPD - UFRGS
 
-May 2012 -- June 2013  
-Porto Alegre, Brazil
+Mai 2012 -- Jun 2013  
+Porto Alegre, Brasil
 
-Data Center on Campus.  
-Web development using PHP, HTML, Javascript e Ajax.
+Centro de Processamento de Dados da universidade.  
+Desenvolvimento web com PHP, HTML, JavaScript e Ajax.

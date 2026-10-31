@@ -5,6 +5,13 @@ comments: false
 
 ## Events and Talks
 
+### Django Girls Berlin
+
+#### Organiser
+
+Ongoing  
+Berlin, Germany
+
 ### Django Girls Leipzig
 
 #### Mentor

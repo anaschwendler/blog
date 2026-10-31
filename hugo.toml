@@ -21,7 +21,7 @@ theme = "beautifulhugo"
 
 [params]
   homeTitle = "Ana Schwendler" # Set a different text for the header on the home page
-  subtitle = "Software Developer"
+  subtitle = "Senior Backend Engineer"
   mainSections = ["post", "posts"]
   logo = "/img/avatar-icon.jpeg" # Expecting square dimensions
   favicon = "/img/favicon.ico"
@@ -72,6 +72,8 @@ theme = "beautifulhugo"
     label = "Português"
     locale = "pt-BR"
     weight = 2
+    [languages.br.params]
+      subtitle = "Engenheira de Software Sênior (Backend)"
     [[languages.br.menus.main]]
       name = "Blog"
       url = "/"

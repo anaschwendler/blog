@@ -1,9 +1,16 @@
 ---
-title: Eventos and Palestras
+title: Eventos e Palestras
 comments: false
 ---
 
-## Eventos and Palestras
+## Eventos e Palestras
+
+### Django Girls Berlin
+
+#### Organizadora
+
+Atualmente  
+Berlim, Alemanha
 
 ### Django Girls Leipzig
 
