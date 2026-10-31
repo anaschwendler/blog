@@ -41,7 +41,7 @@ theme = "beautifulhugo"
     email = "schwendler@gmail.com"
     github = "anaschwendler"
     gitlab = "anaschwendler"
-    twitter = "anaschwendler"
+    bluesky = "anaschwendler.bsky.social"
     linkedin = "anaschwendler"
 
 [languages]
